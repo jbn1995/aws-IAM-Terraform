@@ -9,7 +9,7 @@ This project demonstrates how to manage AWS IAM users and attach policies using 
         Creates AWS IAM users.
         Sets up login profiles with generated passwords.
         Attaches policies to each user as defined in the YAML file.
-    ## output.tf: 
+    ## output.tf: print the users and user-role in a map format for better understandings.
 ## Key Components
 
     aws_iam_user: Provisions IAM users for each username listed in the YAML file.
