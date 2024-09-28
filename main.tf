@@ -40,10 +40,3 @@ resource "aws_iam_user_policy_attachment" "main" {
   user = aws_iam_user.users[each.value.username].name
   policy_arn = "arn:aws:iam::aws:policy/${each.value.role}"
 }
-
-output "output" {
-  value = local.users_data[*].username
-}
-output "role_user" {
-  value = local.user_role_pair
-}
